@@ -1,27 +1,28 @@
 body {
-    background-color: grey;
 
-    .button {
-        grid-template-columns: auto auto auto auto auto auto;
-        margin: 10px;
-        font-size: 10px;
+    #upper-rectangle  {
+
     }
-    .number {
-        background-color: orange;
-        margin: 10px;
-        font-size: 10px;
-        padding: 15px;
-        font-size: 20px;
-        max-height: 100px;
-        max-width: 100px;
+    #lower-rectangle {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 150px;
+        margin-bottom: 200px;
+        position: fixed;
+        align-items: center;
+    }
+    background-color: darkred;
+
+    .buttons {
+        grid-template-columns: auto auto auto auto auto auto;
+        display: grid;
+        place-items: center;
     }
     .symbol {
-        background-color: grey;
-        margin: 10px;
-        font-size: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding: 15px;
-        font-size: 20px;
+        width: 160px;
+        height: 160px;
+        font-size: 30px;
     }
 }
