@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
-<body>
-  <div class="Calculator" style="display: grid;">
-      <div>
-          <input id="input" type="text" placeholder=""><input id="input" type="text" placeholder="">
-      </div>
-      <div class="buttons">
-            <div><button onclick="one()"> 1 </button></div>
-            <div><button onclick="two()"> 4 </button></div>
-            <div><button onclick="seven()"> 7 </button></div>
-      </div>
-  </div>
-</body>
+<script> src="Index.js"></script>
+<link rel="Stylesheet" href="index.css">
+<div id="main">
+
+    <div class="boxes">
+
+    </div>
+
+    <div class="button">
+        <button class="number" style="background-color: orange;" onclick="one()">1</button>
+        <button class="number" style="background-color: orange;"onclick="two()">2</button>
+        <button class="number" style="background-color: orange;"="three()">3</button>
+        <button class="symbol" onclick="plus()">+</button>
+        <button class="symbol" onclick="multi()">x</button>
+        <button class="symbol" style="background-color: black; color: white;" onclick="del()">DEL</button>
+    </div>
+    <div class="button">
+        <button class="number" style="background-color: orange;"onclick="four()">4</button>
+        <button class="number" style="background-color: orange;"onclick="five()">5</button>
+        <button class="number" style="background-color: orange;"onclick="six()">6</button>
+        <button class="symbol" onclick="minus()">-</button>
+        <button class="symbol" onclick="div()">/</button>
+        <button class="symbol" onclick="up()">Ʌ</button>
+    </div>
+    <div class="button">
+        <button class="number" style="background-color: orange;"onclick="sev()">7</button>
+        <button class="number" style="background-color: orange;"onclick="eigh()">8</button>
+        <button class="number" style="background-color: orange;"onclick="nine()">9</button>
+        <button class="symbol" onclick="up()">^</button>
+        <button class="symbol" onclick="up()">%</button>
+        <button class="symbol" onclick="up()">V</button>
+    </div>
+    <div class="button">
+        <button class="number" style="background-color: orange;"onclick="up()">7</button>
+        <button class="number" style="background-color: orange;"onclick="up()">8</button>
+        <button class="number" style="background-color: orange;"onclick="up()">9</button>
+        <button class="symbol" onclick="up()">^</button>
+        <button class="symbol" onclick="up()">%</button>
+        <button class="symbol" onclick="up()">V</button>
+    </div>
+    <div class="button">
+        <button class="symbol" style="background-color: black; color: white;" onclick="up()">AC</button>
+        <button class="number" style="background-color: orange;"onclick="up()">0</button>
+        <button class="number" onclick="up()">9</button>
+        <button class="symbol" onclick="up()">^</button>
+        <button class="symbol" onclick="up()">%</button>
+        <button class="symbol" onclick="up()">V</button>
+    </div>
+</div>
 </html>
