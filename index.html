@@ -8,18 +8,17 @@
 <link rel="Stylesheet" href="index.css">
 <div id="main">
 
-    <div id="upper-rectangle">
-        <input id="input" style="background-color: black; color: white;" type="text" id="username" placeholder="">
-        <input id="output" style="background-color: black; color: white;" type="text" id="output" placeholder="">
-    </div>
-
     <div id="lower-rectangle">
+        <div id="upper-rectangle">
+            <input id="input" id="username" placeholder="">
+            <output id="output" id="output" placeholder="">
+        </div>
         <div class="buttons">
             <button class="symbol" style="background-color: orange;" onclick="one()">1</button>
             <button class="symbol" style="background-color: orange;" onclick="two()">2</button>
             <button class="symbol" style="background-color: orange;" onclick="three()">3</button>
             <button class="symbol" style="background-color: lightgrey;" onclick="plus()">+</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="multi()">x</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="times()">x</button>
             <button class="symbol" style="background-color: grey;" onclick="del()">DEL</button>
         </div>
         <div class="buttons">
@@ -27,25 +26,25 @@
             <button class="symbol" style="background-color: orange;"onclick="five()">5</button>
             <button class="symbol" style="background-color: orange;"onclick="six()">6</button>
             <button class="symbol" style="background-color: lightgrey;" onclick="minus()">-</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="div()">/</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="divide()">/</button>
             <button class="symbol" style="background-color: black; color: white;" onclick="up()">Ʌ</button>
         </div>
         <div class="buttons">
-            <button class="symbol" style="background-color: orange;"onclick="sev()">7</button>
-            <button class="symbol" style="background-color: orange;"onclick="eigh()">8</button>
+            <button class="symbol" style="background-color: orange;"onclick="seven()">7</button>
+            <button class="symbol" style="background-color: orange;"onclick="eight()">8</button>
             <button class="symbol" style="background-color: orange;"onclick="nine()">9</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="up()">^</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="up()">%</button>
-            <button class="symbol" style="background-color: black; color: white;" onclick="up()">V</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="power()">^</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="modulus()">%</button>
+            <button class="symbol" style="background-color: black; color: white;" onclick="down()">V</button>
         </div>
 
         <div class="buttons">
-            <button class="symbol" style="background-color: grey;" onclick="up()">AC</button>
-            <button class="symbol" style="background-color: orange; color: white;" onclick="up()">0</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="up()">.</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="up()">(</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="up()">)</button>
-            <button class="symbol" style="background-color: grey;" onclick="up()">GO</button>
+            <button class="symbol" style="background-color: grey;" onclick="allClear()">AC</button>
+            <button class="symbol" style="background-color: orange; color: white;" onclick="zero()">0</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="decimal()">.</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="leftP()">(</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="rightP()">)</button>
+            <button class="symbol" style="background-color: grey;" onclick="GO()">GO</button> <!-- making it print() actually prints it lol-->
         </div>
     </div>
 
