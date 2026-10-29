@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
-<script> src="Index.js"></script>
+<script> src="index.js"</script>
 <link rel="Stylesheet" href="index.css">
 <div id="main">
 
     <div id="lower-rectangle">
         <div class="putsThatMightWork">
-            <a id="input"></a>
-            <a id="output"></a>
+            <div id="input" style="color: white;"></div>
+            <div id="output" style="color: white;"></div>
+
+            <script>
+                const input = document.getElementById('input')
+                input.textContent = equation.join('');
+
+            </script>
         </div>
         <div class="buttons">
             <button class="symbol" style="background-color: orange;" onclick="one()">1</button>
             <button class="symbol" style="background-color: orange;" onclick="two()">2</button>
             <button class="symbol" style="background-color: orange;" onclick="three()">3</button>
             <button class="symbol" style="background-color: lightgrey;" onclick="plus()">+</button>
-            <button class="symbol" style="background-color: lightgrey;" onclick="times()">x</button>
-            <button class="symbol" style="background-color: grey;" onclick="del()">DEL</button>
+            <button class="symbol" style="background-color: lightgrey;" onclick="multi()">x</button>
+            <button class="symbol" style="background-color: grey;" onclick="remove()">DEL</button>
         </div>
         <div class="buttons">
             <button class="symbol" style="background-color: orange;"onclick="four()">4</button>
@@ -44,7 +50,7 @@
             <button class="symbol" style="background-color: lightgrey;" onclick="decimal()">.</button>
             <button class="symbol" style="background-color: lightgrey;" onclick="leftP()">(</button>
             <button class="symbol" style="background-color: lightgrey;" onclick="rightP()">)</button>
-            <button class="symbol" style="background-color: grey;" onclick="GO()">GO</button> <!-- making it print() actually prints it lol-->
+            <button class="symbol" style="background-color: grey;" onclick="GO()">GO</button>
         </div>
     </div>
 
