@@ -40,15 +40,15 @@ function seven() { equation.push('7'); updateDisplay(); }
 function eight() { equation.push('8'); updateDisplay(); }
 function nine()  { equation.push('9'); updateDisplay(); }
 
-function plus()    { equation.push('+');  updateDisplay(); }
-function minus()   { equation.push('-');  updateDisplay(); }
-function multi()   { equation.push('*');  updateDisplay(); }
-function divide()  { equation.push('/');  updateDisplay(); }
-function decimal() { equation.push('.');  updateDisplay(); }
-function modulus() { equation.push('%');  updateDisplay(); }
+function plus()    { equation.push('+'); updateDisplay(); }
+function minus()   { equation.push('-'); updateDisplay(); }
+function multi()   { equation.push('*'); updateDisplay(); }
+function divide()  { equation.push('/'); updateDisplay(); }
+function decimal() { equation.push('.'); updateDisplay(); }
+function modulus() { equation.push('%'); updateDisplay(); }
 function power()   { equation.push('**'); updateDisplay(); }
-function leftP()   { equation.push('(');  updateDisplay(); }
-function rightP()  { equation.push(')');  updateDisplay(); }
+function leftP()   { equation.push('('); updateDisplay(); }
+function rightP()  { equation.push(')'); updateDisplay(); }
 
 function remove() {
     equation.pop();
@@ -58,7 +58,7 @@ function remove() {
 function allClear() {
     equation = [];
     if (outputDisplay) outputDisplay.textContent = '';
-    historyIndex = equations.length; // Reset history pointer
+    historyIndex = equations.length;
     updateDisplay();
 }
 
@@ -86,9 +86,7 @@ function calculate() {
     }
 }
 
-function GO() {
-    calculate();
-}
+function GO() {calculate();}
 
 function up() {
     if (equations.length === 0) return;
