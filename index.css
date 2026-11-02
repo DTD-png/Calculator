@@ -19,6 +19,7 @@ body {
             background-color: black;
         }
     }
+
     #upper-rectangle  {
         display: grid;
         grid-template-columns: auto auto;
